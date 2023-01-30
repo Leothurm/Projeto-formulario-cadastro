@@ -20,7 +20,7 @@ body{
 .container{
     width: 80%;
     display: flex;
-    height: 80vh;
+    height: 90vh;
     padding: 15px;
     background-color: #f5888c;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
@@ -31,7 +31,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     padding: 1rem;
     border-right: 2px solid black;
 
@@ -51,7 +50,7 @@ body{
 }
 
 .form-header{
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: space-between;
 }
@@ -70,7 +69,6 @@ body{
 }
 
 .loguin-button button:hover{
-    position: relative;
     transition: all 0.5s;
     background-color: #915557;
 }
@@ -79,5 +77,106 @@ body{
     text-decoration: none;
     font-weight: 700;
     color: #FFF;
+  
+}
+
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #915557;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0 0 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover{
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid #915557;
+}
+
+.input-box label,
+.gender-title h6{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #000000c0;
+}
+
+.gender-title h6{
+    font-size: 1.5rem;
+    margin-top: -5px;
+}
+
+
+
+.input-box input::placeholder{
+    color: #000000be;
+}
+
+.gender-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+
+.gender-input{
+    display: flex;
+    align-items: center;
+}
+
+.gender-input label{
+    font-size: 0.81rem;
+    font-weight: 700;
+    color: #000000c0;
+
+}
+
+.continue-button button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color:#F37074 ;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover{
+  background-color: #915557;
+  transition: all 0.5s;
+
+}
+
+.continue-button button a{
+    text-decoration: 0;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: #fff;
 }
 
