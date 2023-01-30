@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F37074;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    height: 80vh;
+    padding: 15px;
+    background-color: #f5888c;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 1rem;
+    border-right: 2px solid black;
+
+}
+
+.form-img img{
+    width: 31rem;
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loguin-button{
+    display: flex;
+    align-items: center;
+}
+
+.loguin-button button{
+    border: none;
+    background-color: #F37074;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loguin-button button:hover{
+    position: relative;
+    transition: all 0.5s;
+    background-color: #915557;
+}
+
+.loguin-button button a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFF;
+}
+
