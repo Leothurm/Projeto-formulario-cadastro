@@ -180,3 +180,76 @@ body{
     color: #fff;
 }
 
+@media screen and (max-width: 1330px) {
+    .form-img{
+        display: none;
+    }
+
+    .container{
+        width: 50%;
+    }
+    .form{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1064px) {
+    .container{
+        width: 90%;
+        height: 90%;
+        padding: 10px;
+    }
+    .title h1{
+        font-size: 1.5em;
+    }
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 12rem;
+        padding-right: 5rem;
+        
+    }
+    
+    .gender-inputs{
+      margin-top: 2rem;
+    }
+    .gender-group{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .gender-input{
+        margin-top: 0.5rem;
+    }
+}
+@media screen and (max-width: 320px) {
+   
+    .form-header {
+        display: flex;
+        justify-content: space-around;
+    }
+    .input-group{
+        padding: 0
+    }
+    .title h1{
+        font-size: 1em;
+    }
+ 
+    .input-box label {
+        margin-left: 1rem;
+    }
+    .gender-group,
+    .gender-title {
+        margin-left: 1rem;
+    }
+
+    .continue-button {
+        display: flex;
+        margin-left: 1.8rem;
+        width: 80%;
+
+    }
+
+}
